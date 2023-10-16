@@ -1,0 +1,110 @@
+#VARIABLES
+#a-z
+#use _
+#case sensitive - starting with capital and small
+#basics for application creation
+#strings-alphabets,words,characters,num
+
+# example (shortcut for comments - ctrl+/)
+iphone=100
+oneplus=80
+samsung,nokia=75,200    #simple way for more variables
+samsung,cus_name1=75,'priya'
+cus_name1='priya' #"" is the same as ''- can use anything
+cus_name2="mani"
+print(iphone+samsung)
+print(samsung,nokia)
+print(oneplus+50)
+print(cus_name2,iphone)
+
+#Types of variables - int,float,string
+#CASTING-int(),float(),str()
+a=3.5
+print(int(a))
+b=5
+print(float(b))
+c=8j
+print(str(c))
+
+#TYPE() function
+age=7
+name="utsav"
+print(type(age))
+print(type(name))
+
+#CASE SENSITIVE
+# A will not overwrite a
+# It will create 2 variables
+a=4.6
+A=5.6
+print(a)
+print(A)
+
+#VARIABLE NAMES
+myname='priya'
+my_name="priya"
+_myname="priya"
+MYNAME='PRIYA'
+my_Name="priya"
+Myname="priya"
+myname2="priya"
+print(myname)
+print(my_name)
+print(_myname)
+print(MYNAME)
+print(my_Name)
+print(Myname)
+print(myname2)
+
+#VARIABLE MULTIPLES
+
+#MANY VALUES TO MULTIPLE VARIABLES
+son1,son2,son3='utsav','inbav','deeku'
+print(son1,son2,son3)
+
+#ONE VALUE FOR MULTIPLE VARIABLES
+son1=son2=son3="boys"
+print(son1,son2,son3)
+
+#UNPACKING A COLLECTION - extract the list of values to variable called unpacking
+family=["utsav","inbav","deeku"]
+son1,son2,son3=family
+print(son1)
+print(son2)
+print(son3)
+
+#PRINT() functions - OUTPUT VARIABLES
+#this is "+" operator in output var
+x="python"
+y=" is"
+z=" awesome"
+print(x+y+z)
+
+#GLOBAL VARIABLES
+#created outside the fuction
+x=' awesome'
+def myfunc():
+    print('python is'+x)
+myfunc()
+
+
+#LOCAL VARIABLES
+#creats variable inside the fuction
+#ex 1
+x=' utsav'
+def myfunc():
+    x=" inbav"
+    print("my son name is" +x)
+myfunc()
+print("my son name is"+x)
+
+#Ex 2
+print(x) #it takes variable which is outside the function
+
+
+
+
+
+
+
+
