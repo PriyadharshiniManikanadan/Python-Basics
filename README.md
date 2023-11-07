@@ -1,6 +1,7 @@
 # Python-Basics
 
 This is my first repository.
+
 Building up my knowledge and started working on it.
 
 Python is a popular programming language. 
