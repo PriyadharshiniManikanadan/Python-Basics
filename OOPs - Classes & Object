@@ -1,0 +1,225 @@
+# Class / Object
+
+"""
+Python is an object oriented programming language.
+
+Almost everything in Python is an object, with its properties and methods.
+
+A Class is like an object constructor, or a "blueprint" for creating objects
+"""
+# Create a class
+
+class Student():
+   print("hai")
+
+class Student():
+   print("hai")
+   print(Student)
+
+#Create a class named Student, with a property named x
+class Student():
+    x = 10
+    print(Student)
+
+# Create aan object
+
+""""
+Now we can use the class named Student to create objects.
+Create an object named s1, and print the value of x 
+"""
+
+class Student():
+    x = 10
+s1 = Student()
+print(s1.x)
+
+# example 2
+
+class myclass():
+    x = 20
+    print(x)
+
+class myclass():
+    x = 50
+ps1= myclass()
+print(ps1.x)
+
+#Exaple
+class person():
+    print("hai")
+    a = 10
+obj = person()
+print(obj.a)
+
+#  __init__() function
+"""
+1. All classes have a function called __init__(), which is always executed when the class is being initiated
+
+2. Use the __init__() function to assign values to object properties, 
+or other operations that are necessary to do when the object is being created
+
+3. The __init__() function is called automatically every time the class is being used to create a new object
+"""
+
+#Example 1
+
+class person():
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+stu1 = person("Priya", 31)
+
+print(stu1.name)
+print(stu1.age)
+
+#Example 2
+
+class student():
+    def __init__(self,name,age):
+        self.n1 = name
+        self.a1 = age
+    def result(self):
+        print("My name is:", self.n1)
+        print("My age is:", self.a1)
+Stu1 = student("Priya", 31)
+Stu1.result()
+
+
+#Example 3
+
+class student():
+    print("Hello")
+    def __init__(self):
+        self.n1 = "Mani"
+        self.a1 = 34
+    def result(self):
+        print("My name is:", self.n1)
+        print("My age is:", self.a1)
+Stu1 = student()
+Stu1.result()
+
+# Example 4
+class myclass:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+obj1 = myclass("Utsav",7)
+
+print(obj1.name)
+print(obj1.age)
+
+
+##  __str__() function
+
+"""
+The __str__() function controls what should be returned when the class object is represented as a string.
+
+If the __str__() function is not set, the string representation of the object is returned
+"""
+
+class person:
+    def __init__(self,name,age):
+        self.n = name
+        self.a = age
+
+    def __str__(self):
+        return f"{self.n},{self.a}"
+
+P1 = person("Priya", 31)
+print(P1)
+
+# OBJECT Methods
+
+"""Objects can also contain methods. Methods in objects are functions that belong to the object."""
+
+# SELF PARAMETER
+
+"""
+1. The self parameter is a reference to the current instance of the class, 
+and is used to access variables that belong to the class.
+
+2. It does not have to be named self , you can call it whatever you like, 
+but it has to be the first parameter of any function in the class
+"""
+
+# Modify Object Properties
+
+class myclass:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+obj1 = myclass("Utsav",7)
+
+obj.age = 8  # You can modify properties on objects like this
+print(obj.age)
+
+# Delete Object Property
+
+class myclass:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+obj1 = myclass("Utsav",7)
+
+del obj.age  # You can modify properties on objects like this
+print(obj.age)
+
+# Delete Objects
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def myfunc(self):
+    print("Hello my name is " + self.name)
+
+p1 = Person("John", 36)
+
+del p1
+
+print(p1)
+
+# THE PASS STATEMENT
+
+class myclass:
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
